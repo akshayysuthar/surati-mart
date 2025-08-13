@@ -5,9 +5,11 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.dev",
+  title: "Surati Mart – Quick Grocery Delivery in Surat",
+  description:
+    "Download Surati Mart and get groceries delivered fast in Surat. Wide range, great prices, unmatched service.",
+  keywords:
+    "grocery delivery surat, quick commerce surat, online grocery surat, surati mart",
 };
 
 export default function RootLayout({

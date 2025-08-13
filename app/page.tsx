@@ -6,15 +6,19 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Download,
-  Shield,
   MapPin,
-  Smartphone,
   ShoppingCart,
-  Truck,
-  Clock,
   Languages,
-  CheckCircle,
-  Heart,
+  Star,
+  Zap,
+  DollarSign,
+  HeadphonesIcon,
+  Play,
+  Phone,
+  Mail,
+  Instagram,
+  MessageCircle,
+  Facebook,
 } from "lucide-react";
 
 export default function SuratiMartLanding() {
@@ -22,102 +26,186 @@ export default function SuratiMartLanding() {
 
   const content = {
     en: {
-      title: "Surati's Mart",
-      subtitle: "Your Trusted Local E-Commerce Partner",
-      tagline: "Made in Surat, Made for Surat",
-      heroDescription:
-        "Experience the best online shopping with Surati's Mart - your local e-commerce solution built with love in Surat. Download our free app and enjoy seamless shopping experience.",
-      downloadTitle: "Download Our Free App",
-      downloadDescription:
-        "Get the Surati's Mart app absolutely free! No hidden charges, no scams - just pure shopping convenience.",
-      trustTitle: "Why Trust Surati's Mart?",
-      trustItems: [
-        "100% Made in Surat by local developers",
-        "Completely free to download and use",
-        "No hidden fees or subscription charges",
-        "Secure and safe shopping experience",
-        "Local business supporting local community",
-      ],
-      features: [
+      // Hero Section
+      heroTitle: "Surat's Fastest Grocery Delivery",
+      heroSubtitle: "Right to Your Doorstep",
+      heroTagline: "Wide range. Best prices. Unmatched service. Only in Surat.",
+      downloadAPK: "Download APK Now",
+      comingSoon: "Coming Soon on Play Store",
+
+      // About Section
+      aboutTitle: "About Surati Mart",
+      aboutText:
+        "We're Surat's own quick commerce platform, delivering groceries and daily essentials right to your doorstep. Built exclusively for Surat residents, we understand your needs and are committed to providing better service and better prices than anyone else.",
+
+      // USP Section
+      uspTitle: "Why Choose Surati Mart?",
+      uspItems: [
+        {
+          icon: Zap,
+          title: "Ultra-Fast Delivery",
+          description: "Get your groceries delivered in minutes, not hours",
+        },
         {
           icon: ShoppingCart,
-          title: "Easy Shopping",
-          description: "Browse and shop with just a few taps",
+          title: "Wide Range of Products",
+          description:
+            "From fresh vegetables to daily essentials - 1000+ products",
         },
         {
-          icon: Truck,
-          title: "Fast Delivery",
-          description: "Quick delivery across Surat",
+          icon: DollarSign,
+          title: "Great Prices Everyday",
+          description: "Unbeatable prices and offers you'll absolutely love",
         },
         {
-          icon: Shield,
-          title: "100% Secure",
-          description: "Your data and payments are safe",
-        },
-        {
-          icon: Clock,
-          title: "24/7 Support",
-          description: "We're here to help anytime",
+          icon: HeadphonesIcon,
+          title: "Customer-First Experience",
+          description: "24/7 chat support and hassle-free returns",
         },
       ],
-      missionTitle: "Our Mission",
-      missionText:
-        "To provide the best e-commerce experience in Surat by connecting local businesses with customers through our innovative platform. We believe in supporting our local community while delivering exceptional service.",
-      downloadButton: "Download APK",
-      learnMore: "Learn More",
-      madeWith: "Made with",
-      inSurat: "in Surat",
+
+      // How It Works
+      howItWorksTitle: "How It Works",
+      steps: [
+        {
+          step: "1",
+          title: "Download the App",
+          description: "Get our free APK and install in seconds",
+        },
+        {
+          step: "2",
+          title: "Shop from 1000+ Products",
+          description: "Browse fresh groceries and daily essentials",
+        },
+        {
+          step: "3",
+          title: "Get Delivery in Minutes",
+          description: "Enjoy ultra-fast delivery to your doorstep",
+        },
+      ],
+
+      // Trust Section
+      trustTitle: "Join Thousands of Happy Customers",
+      deliveryStats: "Already delivering happiness in 50+ Surat neighborhoods",
+      testimonials: [
+        {
+          name: "Priya Patel",
+          area: "Adajan",
+          text: "Amazing service! Got my groceries in just 15 minutes. Surati Mart is a game-changer for Surat!",
+          rating: 5,
+        },
+        {
+          name: "Rahul Shah",
+          area: "Vesu",
+          text: "Best prices in the city and super fast delivery. Love supporting our local Surat business!",
+          rating: 5,
+        },
+        {
+          name: "Meera Joshi",
+          area: "Citylight",
+          text: "Fresh vegetables and great customer service. Highly recommend to all Surat residents!",
+          rating: 5,
+        },
+      ],
+
+      // Footer
+      footerTagline: "Surati Mart – Surat's Own Quick Commerce",
+      contactTitle: "Contact Us",
+      address: "Surati Mart HQ, Ring Road, Surat, Gujarat 395002",
+      followUs: "Follow Us",
     },
     gu: {
-      title: "સુરતી'સ માર્ટ",
-      subtitle: "તમારો વિશ્વસનીય સ્થાનિક ઈ-કોમર્સ પાર્ટનર",
-      tagline: "સુરતમાં બનેલું, સુરત માટે બનેલું",
-      heroDescription:
-        "સુરતી'સ માર્ટ સાથે શ્રેષ્ઠ ઓનલાઈન શોપિંગનો અનુભવ કરો - સુરતમાં પ્રેમથી બનાવેલ તમારું સ્થાનિક ઈ-કોમર્સ સોલ્યુશન. અમારી મફત એપ ડાઉનલોડ કરો અને સરળ શોપિંગનો આનંદ લો.",
-      downloadTitle: "અમારી મફત એપ ડાઉનલોડ કરો",
-      downloadDescription:
-        "સુરતી'સ માર્ટ એપ સંપૂર્ણ મફત મેળવો! કોઈ છુપાયેલા ચાર્જ નહીં, કોઈ છેતરપિંડી નહીં - ફક્ત શુદ્ધ શોપિંગ સુવિધા.",
-      trustTitle: "સુરતી'સ માર્ટ પર કેમ વિશ્વાસ કરવો?",
-      trustItems: [
-        "100% સુરતમાં સ્થાનિક ડેવલપર્સ દ્વારા બનાવેલ",
-        "ડાઉનલોડ અને ઉપયોગ માટે સંપૂર્ણ મફત",
-        "કોઈ છુપાયેલી ફી અથવા સબ્સ્ક્રિપ્શન ચાર્જ નહીં",
-        "સુરક્ષિત અને સલામત શોપિંગ અનુભવ",
-        "સ્થાનિક સમુદાયને ટેકો આપતો સ્થાનિક વ્યવસાય",
-      ],
-      features: [
+      // Hero Section
+      heroTitle: "સુરતની સૌથી ઝડપી ગ્રોસરી ડિલિવરી",
+      heroSubtitle: "સીધી તમારા ઘરના દરવાજે",
+      heroTagline: "વિશાળ રેન્જ. શ્રેષ્ઠ કિંમતો. અજોડ સેવા. ફક્ત સુરતમાં.",
+      downloadAPK: "📥 APK હમણાં ડાઉનલોડ કરો",
+      comingSoon: "પ્લે સ્ટોર પર જલ્દી આવી રહ્યું છે",
+
+      // About Section
+      aboutTitle: "સુરતી માર્ટ વિશે",
+      aboutText:
+        "અમે સુરતનું પોતાનું ક્વિક કોમર્સ પ્લેટફોર્મ છીએ, જે ગ્રોસરી અને દૈનિક જરૂરિયાતો સીધી તમારા ઘરના દરવાજે પહોંચાડે છે. ફક્ત સુરતના રહેવાસીઓ માટે બનાવેલ, અમે તમારી જરૂરિયાતો સમજીએ છીએ અને બીજા કોઈ કરતાં વધુ સારી સેવા અને સારી કિંમતો આપવા માટે પ્રતિબદ્ધ છીએ.",
+
+      // USP Section
+      uspTitle: "સુરતી માર્ટ કેમ પસંદ કરવું?",
+      uspItems: [
+        {
+          icon: Zap,
+          title: "અતિ-ઝડપી ડિલિવરી",
+          description: "તમારી ગ્રોસરી મિનિટોમાં મેળવો, કલાકોમાં નહીં",
+        },
         {
           icon: ShoppingCart,
-          title: "સરળ શોપિંગ",
-          description: "માત્ર થોડા ટેપ સાથે બ્રાઉઝ અને શોપ કરો",
+          title: "ઉત્પાદનોની વિશાળ શ્રેણી",
+          description: "તાજા શાકભાજીથી લઈને દૈનિક જરૂરિયાતો - 1000+ ઉત્પાદનો",
         },
         {
-          icon: Truck,
-          title: "ઝડપી ડિલિવરી",
-          description: "સુરતભરમાં ઝડપી ડિલિવરી",
+          icon: DollarSign,
+          title: "દરરોજ શ્રેષ્ઠ કિંમતો",
+          description: "અજેય કિંમતો અને ઓફર જે તમને ખરેખર ગમશે",
         },
         {
-          icon: Shield,
-          title: "100% સુરક્ષિત",
-          description: "તમારો ડેટા અને પેમેન્ટ સુરક્ષિત છે",
-        },
-        {
-          icon: Clock,
-          title: "24/7 સપોર્ટ",
-          description: "અમે કોઈપણ સમયે મદદ માટે અહીં છીએ",
+          icon: HeadphonesIcon,
+          title: "ગ્રાહક-પ્રથમ અનુભવ",
+          description: "24/7 ચેટ સપોર્ટ અને હેરાન-મુક્ત રિટર્ન",
         },
       ],
-      missionTitle: "અમારું મિશન",
-      missionText:
-        "અમારા નવીન પ્લેટફોર્મ દ્વારા સ્થાનિક વ્યવસાયોને ગ્રાહકો સાથે જોડીને સુરતમાં શ્રેષ્ઠ ઈ-કોમર્સ અનુભવ પ્રદાન કરવો. અમે અસાધારણ સેવા પ્રદાન કરતી વખતે અમારા સ્થાનિક સમુદાયને ટેકો આપવામાં વિશ્વાસ રાખીએ છીએ.",
-      downloadButton: "APK ડાઉનલોડ કરો",
-      learnMore: "વધુ જાણો",
-      madeWith: "બનાવેલ",
-      inSurat: "સુરતમાં",
+
+      // How It Works
+      howItWorksTitle: "તે કેવી રીતે કામ કરે છે",
+      steps: [
+        {
+          step: "1",
+          title: "એપ ડાઉનલોડ કરો",
+          description: "અમારી મફત APK મેળવો અને સેકન્ડોમાં ઇન્સ્ટોલ કરો",
+        },
+        {
+          step: "2",
+          title: "1000+ ઉત્પાદનોમાંથી ખરીદી કરો",
+          description: "તાજી ગ્રોસરી અને દૈનિક જરૂરિયાતો બ્રાઉઝ કરો",
+        },
+        {
+          step: "3",
+          title: "મિનિટોમાં ડિલિવરી મેળવો",
+          description: "તમારા ઘરના દરવાજે અતિ-ઝડપી ડિલિવરીનો આનંદ લો",
+        },
+      ],
+
+      // Trust Section
+      trustTitle: "હજારો ખુશ ગ્રાહકો સાથે જોડાઓ",
+      deliveryStats: "સુરતના 50+ વિસ્તારોમાં પહેલેથી જ ખુશી પહોંચાડી રહ્યા છીએ",
+      testimonials: [
+        {
+          name: "પ્રિયા પટેલ",
+          area: "અદાજણ",
+          text: "અદ્ભુત સેવા! માત્ર 15 મિનિટમાં મારી ગ્રોસરી મળી. સુરતી માર્ટ સુરત માટે ગેમ-ચેન્જર છે!",
+          rating: 5,
+        },
+        {
+          name: "રાહુલ શાહ",
+          area: "વેસુ",
+          text: "શહેરમાં શ્રેષ્ઠ કિંમતો અને સુપર ફાસ્ટ ડિલિવરી. અમારા સ્થાનિક સુરત બિઝનેસને સપોર્ટ કરવાનું ગમે છે!",
+          rating: 5,
+        },
+        {
+          name: "મીરા જોશી",
+          area: "સિટીલાઇટ",
+          text: "તાજા શાકભાજી અને શ્રેષ્ઠ ગ્રાહક સેવા. બધા સુરત રહેવાસીઓને ખૂબ ભલામણ!",
+          rating: 5,
+        },
+      ],
+
+      // Footer
+      footerTagline: "સુરતી માર્ટ – સુરતનું પોતાનું ક્વિક કોમર્સ",
+      contactTitle: "અમારો સંપર્ક કરો",
+      address: "સુરતી માર્ટ HQ, રિંગ રોડ, સુરત, ગુજરાત 395002",
+      followUs: "અમને ફોલો કરો",
     },
   };
 
   const currentContent = content[language];
+
   // Function to trigger APK download
   const handleDownloadApk = () => {
     const apkUrl = "/apk/app-release.apk";
@@ -133,183 +221,125 @@ export default function SuratiMartLanding() {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#f5f6fb" }}>
-      {/* Header */}
-      <header
-        className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b"
-        style={{ borderColor: "#d0d4dc" }}
-      >
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div className="min-h-screen bg-white">
+      {/* Sticky Header */}
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             {/* <img
-              src="/placeholder.svg?height=40&width=40&text=SM"
-              alt="Surati's Mart Logo"
+              src="/surati-mart-logo.png"
+              alt="Surati Mart Logo"
               className="w-10 h-10 rounded-lg"
             /> */}
-            <span className="text-2xl font-bold" style={{ color: "#363636" }}>
-              {currentContent.title}
-            </span>
+            <span className="text-xl font-bold text-gray-800">Surati Mart</span>
           </div>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setLanguage(language === "en" ? "gu" : "en")}
-            className="flex items-center gap-2"
-            style={{ borderColor: "#d0d4dc", color: "#363636" }}
-          >
-            <Languages className="w-4 h-4" />
-            {language === "en" ? "ગુજરાતી" : "English"}
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button
+              size="sm"
+              className="bg-[#27AE60] hover:bg-[#219A52] text-white px-4 py-2"
+              onClick={handleDownloadApk}
+            >
+              <Download className="w-4 h-4 mr-1" />
+              APK
+            </Button>
+
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setLanguage(language === "en" ? "gu" : "en")}
+              className="flex items-center gap-1"
+            >
+              <Languages className="w-4 h-4" />
+              {language === "en" ? "ગુ" : "En"}
+            </Button>
+          </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto text-center max-w-4xl">
-          <Badge
-            className="mb-6"
-            style={{ backgroundColor: "#ffe141", color: "#363636" }}
-          >
+      <section className="py-16 px-4 bg-gradient-to-br from-green-50 to-yellow-50">
+        <div className="container mx-auto text-center max-w-5xl">
+          <Badge className="mb-6 bg-[#F2C94C] text-gray-800 hover:bg-[#F2C94C] px-4 py-2">
             <MapPin className="w-4 h-4 mr-1" />
-            {currentContent.tagline}
+            Only in Surat
           </Badge>
 
-          <h1
-            className="text-5xl md:text-7xl font-bold mb-6"
-            style={{ color: "#363636" }}
-          >
-            {currentContent.title}
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            {currentContent.heroTitle}
           </h1>
+          <h2 className="text-2xl md:text-4xl font-semibold text-[#27AE60] mb-6">
+            {currentContent.heroSubtitle}
+          </h2>
 
-          <p className="text-xl mb-4" style={{ color: "#1f1a92" }}>
-            {currentContent.subtitle}
+          <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto">
+            {currentContent.heroTagline}
           </p>
 
-          <p
-            className="text-lg mb-12 max-w-2xl mx-auto leading-relaxed"
-            style={{ color: "#363636" }}
-          >
-            {currentContent.heroDescription}
-          </p>
+          {/* Hero Image */}
+          <div className="mb-12">
+            {/* <img
+              src="/surati-mart-delivery.png"
+              alt="Surati Mart Delivery"
+              className="mx-auto rounded-2xl shadow-2xl max-w-full h-auto"
+            /> */}
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="text-white px-8 py-4 text-lg hover:opacity-90"
-              style={{ backgroundColor: "#1f1a92" }}
+              className="bg-[#27AE60] hover:bg-[#219A52] text-white px-8 py-4 text-lg font-semibold shadow-lg"
               onClick={handleDownloadApk}
             >
-              <Download className="w-5 h-5 mr-2" />
-              {currentContent.downloadButton}
+              {currentContent.downloadAPK}
             </Button>
+
             <Button
               variant="outline"
               size="lg"
-              className="px-8 py-4 text-lg bg-transparent"
-              style={{ borderColor: "#1f1a92", color: "#1f1a92" }}
+              disabled
+              className="px-8 py-4 text-lg bg-gray-100 text-gray-500 cursor-not-allowed"
             >
-              {currentContent.learnMore}
+              <Play className="w-5 h-5 mr-2" />
+              {currentContent.comingSoon}
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Trust Section */}
+      {/* About Section */}
       <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <h2
-              className="text-3xl font-bold mb-4"
-              style={{ color: "#363636" }}
-            >
-              {currentContent.trustTitle}
-            </h2>
-            <div
-              className="w-24 h-1 mx-auto"
-              style={{ backgroundColor: "#ffe141" }}
-            ></div>
-          </div>
-
-          <Card
-            className="p-8 shadow-lg border-0"
-            style={{ backgroundColor: "#f5f6fb" }}
-          >
-            <CardContent className="p-0">
-              <div className="grid gap-4">
-                {currentContent.trustItems.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle
-                      className="w-6 h-6 flex-shrink-0"
-                      style={{ color: "#28a745" }}
-                    />
-                    <span className="text-lg" style={{ color: "#363636" }}>
-                      {item}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Download Section */}
-      <section className="py-16 px-4" style={{ backgroundColor: "#1f1a92" }}>
-        <div className="container mx-auto text-center max-w-3xl">
-          <Smartphone className="w-16 h-16 text-white mx-auto mb-6" />
-          <h2 className="text-4xl font-bold text-white mb-4">
-            {currentContent.downloadTitle}
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            {currentContent.aboutTitle}
           </h2>
-          <p className="text-xl mb-8" style={{ color: "#3874ba" }}>
-            {currentContent.downloadDescription}
+          <p className="text-lg text-gray-700 leading-relaxed">
+            {currentContent.aboutText}
           </p>
-
-          <Button
-            size="lg"
-            className="px-12 py-4 text-lg font-semibold hover:opacity-90"
-            style={{ backgroundColor: "#ffe141", color: "#363636" }}
-          >
-            <Download className="w-6 h-6 mr-3" />
-            {currentContent.downloadButton}
-          </Button>
-
-          <div
-            className="mt-8 flex items-center justify-center gap-2"
-            style={{ color: "#3874ba" }}
-          >
-            <Shield className="w-5 h-5" />
-            <span>100% Safe & Secure Download</span>
-          </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 px-4">
+      {/* USP Section */}
+      <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+            {currentContent.uspTitle}
+          </h2>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {currentContent.features.map((feature, index) => (
+            {currentContent.uspItems.map((item, index) => (
               <Card
                 key={index}
-                className="text-center p-6 hover:shadow-lg transition-shadow border-0 bg-white"
+                className="text-center p-6 hover:shadow-lg transition-shadow bg-white border-0"
               >
                 <CardContent className="p-0">
-                  <div
-                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                    style={{ backgroundColor: "#f5f6fb" }}
-                  >
-                    <feature.icon
-                      className="w-8 h-8"
-                      style={{ color: "#1f1a92" }}
-                    />
+                  <div className="w-16 h-16 bg-[#27AE60] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <item.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3
-                    className="text-xl font-semibold mb-2"
-                    style={{ color: "#363636" }}
-                  >
-                    {feature.title}
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {item.title}
                   </h3>
-                  <p style={{ color: "#9197a6" }}>{feature.description}</p>
+                  <p className="text-gray-600">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -317,54 +347,194 @@ export default function SuratiMartLanding() {
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* How It Works */}
       <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold mb-6" style={{ color: "#363636" }}>
-            {currentContent.missionTitle}
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+            {currentContent.howItWorksTitle}
           </h2>
-          <p
-            className="text-lg leading-relaxed mb-8"
-            style={{ color: "#363636" }}
-          >
-            {currentContent.missionText}
-          </p>
 
-          <div
-            className="flex items-center justify-center gap-2"
-            style={{ color: "#9197a6" }}
+          <div className="grid md:grid-cols-3 gap-8">
+            {currentContent.steps.map((step, index) => (
+              <div key={index} className="text-center">
+                <div className="w-20 h-20 bg-[#F2C94C] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl font-bold text-gray-800">
+                    {step.step}
+                  </span>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Repeat */}
+      <section className="py-16 px-4 bg-[#27AE60]">
+        <div className="container mx-auto text-center max-w-3xl">
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Ready to Experience the Future of Grocery Shopping?
+          </h2>
+
+          <Button
+            size="lg"
+            className="bg-[#F2C94C] hover:bg-[#E6B800] text-gray-800 px-12 py-4 text-lg font-semibold shadow-lg mb-4"
           >
-            <span>{currentContent.madeWith}</span>
-            <Heart className="w-5 h-5 text-red-500 fill-current" />
-            <span>{currentContent.inSurat}</span>
+            <Download className="w-6 h-6 mr-3" />
+            {currentContent.downloadAPK}
+          </Button>
+
+          <p className="text-green-100 text-lg">{currentContent.comingSoon}</p>
+        </div>
+      </section>
+
+      {/* Trust & Social Proof */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              {currentContent.trustTitle}
+            </h2>
+            <p className="text-xl text-[#27AE60] font-semibold">
+              {currentContent.deliveryStats}
+            </p>
+          </div>
+
+          {/* Testimonials */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {currentContent.testimonials.map((testimonial, index) => (
+              <Card key={index} className="p-6 bg-white border-0 shadow-lg">
+                <CardContent className="p-0">
+                  <div className="flex mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-[#F2C94C] fill-current"
+                      />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 mb-4 italic">
+                    "{testimonial.text}"
+                  </p>
+                  <div className="text-sm">
+                    <p className="font-semibold text-gray-900">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-gray-600">{testimonial.area}, Surat</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Payment Partners */}
+          <div className="text-center">
+            <p className="text-gray-600 mb-6">Secure payments powered by</p>
+            <div className="flex justify-center items-center gap-8 flex-wrap">
+              <img
+                src="/placeholder.svg?height=40&width=80&text=UPI"
+                alt="UPI"
+                className="h-10 opacity-70"
+              />
+              <img
+                src="/placeholder.svg?height=40&width=80&text=Paytm"
+                alt="Paytm"
+                className="h-10 opacity-70"
+              />
+              <img
+                src="/placeholder.svg?height=40&width=80&text=GPay"
+                alt="Google Pay"
+                className="h-10 opacity-70"
+              />
+              <img
+                src="/placeholder.svg?height=40&width=80&text=PhonePe"
+                alt="PhonePe"
+                className="h-10 opacity-70"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4" style={{ backgroundColor: "#390099" }}>
-        <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <img
-              src="/placeholder.svg?height=32&width=32&text=SM"
-              alt="Surati's Mart Logo"
-              className="w-8 h-8 rounded-lg"
-            />
-            <span className="text-xl font-bold text-white">
-              {currentContent.title}
-            </span>
+      <footer className="bg-gray-900 text-white py-12 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            {/* Brand */}
+            <div>
+              <div className="flex items-center space-x-3 mb-4">
+                {/* <img
+                  src="/surati-mart-logo.png"
+                  alt="Surati Mart Logo"
+                  className="w-8 h-8 rounded-lg"
+                /> */}
+                <span className="text-xl font-bold">Surati Mart</span>
+              </div>
+              <p className="text-gray-400 mb-4">
+                {currentContent.footerTagline}
+              </p>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                {currentContent.contactTitle}
+              </h3>
+              <div className="space-y-2 text-gray-400">
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4" />
+                  <span>+91 98765 43210</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4" />
+                  <span>hello@suratimart.com</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <MapPin className="w-4 h-4 mt-1" />
+                  <span>{currentContent.address}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Social */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                {currentContent.followUs}
+              </h3>
+              <div className="flex gap-4">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="bg-transparent border-gray-600 text-gray-400 hover:text-white"
+                >
+                  <Instagram className="w-4 h-4" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="bg-transparent border-gray-600 text-gray-400 hover:text-white"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="bg-transparent border-gray-600 text-gray-400 hover:text-white"
+                >
+                  <Facebook className="w-4 h-4" />
+                </Button>
+              </div>
+            </div>
           </div>
 
-          <p className="mb-6" style={{ color: "#490D83" }}>
-            {currentContent.subtitle}
-          </p>
-
-          <div
-            className="flex items-center justify-center gap-1 text-sm"
-            style={{ color: "#490D83" }}
-          >
-            <MapPin className="w-4 h-4" />
-            <span>Proudly serving Surat since 2024</span>
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+            <p>
+              &copy; 2025 Surati Mart. All rights reserved. Made with ❤️ in
+              Surat.
+            </p>
           </div>
         </div>
       </footer>
